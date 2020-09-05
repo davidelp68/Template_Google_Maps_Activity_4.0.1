@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dm.tutorialgooglemapsactivity401">
+
+    <!--
+         Non è necessario utilizzare le autorizzazioni ACCESS_COARSE / FINE_LOCATION
+          API di Google Maps Android v2, ma devi specificare le
+          autorizzazioni di posizione per la funzionalità "MyLocation".
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--
+             La chiave API per le API basate su Google Maps è definita come una risorsa stringa.
+              (Vedi il file "res / values / google_maps_api.xml").
+              Tieni presente che la chiave API è collegata alla chiave di crittografia utilizzata per firmare l'APK.
+              È necessaria una chiave API diversa per ciascuna chiave di crittografia, inclusa la chiave di rilascio utilizzata
+              firmare l'APK per la pubblicazione.
+              È possibile definire le chiavi per gli obiettivi di debug e di rilascio in src / debug / e src / release /.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

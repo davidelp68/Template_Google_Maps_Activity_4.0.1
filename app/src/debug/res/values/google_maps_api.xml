@@ -1,0 +1,24 @@
+<resources>
+    <!--
+    TODO: prima di eseguire l'applicazione, è necessaria una chiave API di Google Maps.
+
+    Per ottenerne uno, segui questo link, segui le indicazioni e premi "Crea" alla fine:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=89:77:B3:68:EB:39:1E:E5:9C:78:A1:67:7E:9A:2E:3C:4B:4D:B1:B0%3Bcom.dm.tutorialgooglemapsactivity401
+
+    Puoi anche aggiungere le tue credenziali a una chiave esistente, usando questi valori:
+
+    Package name:
+    com.dm.tutorialgooglemapsactivity401
+
+    SHA-1 certificate fingerprint:
+    89:77:B3:68:EB:39:1E:E5:9C:78:A1:67:7E:9A:2E:3C:4B:4D:B1:B0
+
+    In alternativa, puoi seguire le indicazioni qui:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Una volta che hai la chiave (inizia con "AIza"), sostituisci la stringa "google_maps_key"
+    in questo file.
+    -->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">google_maps_key</string>
+</resources>
